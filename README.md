@@ -28,7 +28,7 @@ Thanks!
 Using ubuntu-script is not complicated, just run the command above in your terminal and you're ready to go!
 
 ```
-sudo apt install curl -y ; bash <(curl -Ls https://github.com/nldotdotlulu/ubuntu-script/raw/master/script.sh)
+sudo apt update ; sudo apt install curl -y ; bash <(curl -Ls https://github.com/nldotdotlulu/ubuntu-script/raw/master/script.sh)
 ```
 
 ## Development
