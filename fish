@@ -7,6 +7,8 @@ set -q OMF_REPO_BRANCH; or set OMF_REPO_BRANCH "master"
 
 
 function main
+  # Set not interactive mode
+  set -g NONINTERACTIVE
   # Set default settings
   set -q XDG_DATA_HOME
     and set -g OMF_PATH_DEFAULT "$XDG_DATA_HOME/omf"
