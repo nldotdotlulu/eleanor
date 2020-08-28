@@ -197,11 +197,24 @@ echo 'Set fish as default shell';
 echo '';
 sudo chsh -s `which fish`;
 echo '';
+echo 'Installing terminal theme agnoster, adding powerline patched font to system';
+echo '';
+fish -c "omf install agnoster";
+wget https://raw.githubusercontent.com/nldotdotlulu/ubuntu-script/master/Ubuntu%20Mono%20derivative%20Powerline.ttf;
+mkdir ~/.fonts;
+mv Ubuntu\ Mono\ derivative\ Powerline.ttf ~/.fonts;
+fc-cache -f -v;
+echo '';
 echo 'Installing shell color scheme Gogh, you need to select a color scheme now, access: https://mayccoll.github.io/Gogh/ and select one';
 echo '';
 sudo apt-get install dconf-cli uuid-runtime -y;
 number=03
 echo $number | bash -c "$(wget -qO- https://git.io/vQgMr)"
+echo '';
+echo 'Cleaning things up!';
+rm mongodb-compass_1.21.2_amd64.deb;
+rm packages.microsoft.gpg;
+rm vstudio_x64_10_lin.deb;
 echo '';
 echo 'Everything setup, Thanks for using ubuntu-script!';
 echo '';
