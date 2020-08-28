@@ -131,7 +131,7 @@ sudo add-apt-repository \
    stable";
 sudo apt-get update;
 sudo apt-get install docker-ce -y;
-sudo apt install docker-compose;
+sudo apt install docker-compose -y;
 echo '';
 echo 'Installing MongoDB Compass';
 echo '';
