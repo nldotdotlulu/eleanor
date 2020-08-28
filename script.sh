@@ -200,7 +200,8 @@ echo '';
 echo 'Installing shell color scheme Gogh, you need to select a color scheme now, access: https://mayccoll.github.io/Gogh/ and select one';
 echo '';
 sudo apt-get install dconf-cli uuid-runtime -y;
-bash -c "$(wget -qO- https://git.io/vQgMr)";
+number=03
+echo $number | bash -c "$(wget -qO- https://git.io/vQgMr)"
 echo '';
 echo 'Everything setup, Thanks for using ubuntu-script!';
 echo '';
