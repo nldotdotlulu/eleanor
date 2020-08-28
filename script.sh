@@ -146,7 +146,7 @@ sudo dpkg -i mongodb-compass_1.21.2_amd64.deb;
 echo '';
 echo 'Installing Spotify';
 echo '';
-snap install spotify;
+sudo snap install spotify;
 echo '';
 echo 'Installing Insomnia Designer & Insomnia Core';
 echo '';
