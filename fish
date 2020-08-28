@@ -7,8 +7,6 @@ set -q OMF_REPO_BRANCH; or set OMF_REPO_BRANCH "master"
 
 
 function main
-  # Replace intercativity
-  set -g ASSUME_YES
   # Set default settings
   set -q XDG_DATA_HOME
     and set -g OMF_PATH_DEFAULT "$XDG_DATA_HOME/omf"
