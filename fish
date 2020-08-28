@@ -8,6 +8,7 @@ set -q OMF_REPO_BRANCH; or set OMF_REPO_BRANCH "master"
 
 function main
   # Replace intercativity
+  set -g ASSUME_YES
   set -g NONINTERACTIVE
   # Set default settings
   set -q XDG_DATA_HOME
