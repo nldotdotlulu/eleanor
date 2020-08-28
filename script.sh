@@ -169,7 +169,9 @@ sudo apt install ubuntu-unity-desktop -y;
 echo '';
 echo 'Installing Compiz';
 echo '';
-sudo apt-get install compizconfig-settings-manager compiz-plugins-extra
+sudo apt-get install compizconfig-settings-manager compiz-plugins-extra -y;
+sudo apt --fix-broken install;
+sudo apt-get install compizconfig-settings-manager compiz-plugins-extra -y;
 echo '';
 echo 'Installing fish-yvm (Yarn Version Manager written in Fish 🐟) https://github.com/cideM/fish-yvm';
 echo '';
