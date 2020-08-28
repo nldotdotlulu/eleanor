@@ -61,13 +61,8 @@ echo 'Installing Pyenv (Python package manager)';
 echo '';
 curl https://pyenv.run | bash;
 echo '';
-echo 'Adicionando as linhas de comando abaixo ao seu shell (will be added soon)';
-# echo 'text here' >> filename
-echo '
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-';
+echo 'Installing Pyenv oh my fish plugin';
+fish -c "omf install pyenv";
 echo '';
 echo 'Instalando Visual Studio Code';
 echo '';
