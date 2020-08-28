@@ -195,7 +195,7 @@ code --install-extension rocketseat.rocketseatreactnative;
 echo '';
 echo 'Set fish as default shell';
 echo '';
-bash -c "chsh -s `which fish`";
+sudo chsh -s `which fish`;
 echo '';
 echo 'Installing shell color scheme Gogh, you need to select a color scheme now, access: https://mayccoll.github.io/Gogh/ and select one';
 echo '';
