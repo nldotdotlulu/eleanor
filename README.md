@@ -1,6 +1,6 @@
-# Ubuntu Script
+# Eleanor
 
-Transforme sua máquina em um ambiente de desenvolvimento com apenas uma linha de comando!
+One command, install all required dependencies to have a linux machine ready for web development!
 
 *Shortlink https://git.io/JUIGl*
 
